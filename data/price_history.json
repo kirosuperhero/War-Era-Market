@@ -1,0 +1,888 @@
+{
+  "A245_C50": [
+    {
+      "price": 451.6,
+      "time": "2026-04-19T13:49:09.762088",
+      "user": "698eb46d",
+      "attack": 245,
+      "critical": 50
+    }
+  ],
+  "A270_C50": [
+    {
+      "price": 484.5,
+      "time": "2026-04-19T13:49:31.079205",
+      "user": "68839fd4",
+      "attack": 269,
+      "critical": 50
+    }
+  ],
+  "A265_C50": [
+    {
+      "price": 470.0,
+      "time": "2026-04-19T13:50:23.193231",
+      "user": "689708b8",
+      "attack": 263,
+      "critical": 50
+    }
+  ],
+  "A290_C48": [
+    {
+      "price": 530.0,
+      "time": "2026-04-19T13:50:35.832269",
+      "user": "689708b8",
+      "attack": 290,
+      "critical": 48
+    }
+  ],
+  "A170_C32": [
+    {
+      "price": 175.0,
+      "time": "2026-04-19T13:51:07.856254",
+      "user": "681f5fbb",
+      "attack": 170,
+      "critical": 31
+    }
+  ],
+  "A0_C0": [
+    {
+      "price": 436.0,
+      "time": "2026-04-19T13:51:31.355541",
+      "user": "6910e1eb",
+      "attack": 149,
+      "critical": 0
+    },
+    {
+      "price": 390.0,
+      "time": "2026-04-19T13:51:52.348979",
+      "user": "692ee8d8",
+      "attack": 144,
+      "critical": 0
+    },
+    {
+      "price": 132.0,
+      "time": "2026-04-19T13:52:19.981692",
+      "user": "69ce5285",
+      "attack": 50,
+      "critical": 0
+    },
+    {
+      "price": 369.0,
+      "time": "2026-04-19T13:54:11.206151",
+      "user": "684db976",
+      "attack": 60,
+      "critical": 0
+    }
+  ],
+  "jet_A245_C50": [
+    {
+      "price": 451.6,
+      "time": "2026-04-19T14:18:48.220136",
+      "user": "698eb46d",
+      "main_value": 245,
+      "secondary_value": 50
+    },
+    {
+      "price": 436.364,
+      "time": "2026-04-19T18:02:49.936758",
+      "user": "698eb46d",
+      "main_value": 245,
+      "secondary_value": 50
+    },
+    {
+      "price": 495.0,
+      "time": "2026-04-20T17:28:54.137885",
+      "user": "68796073",
+      "main_value": 245,
+      "secondary_value": 50
+    }
+  ],
+  "jet_A270_C50": [
+    {
+      "price": 484.5,
+      "time": "2026-04-19T14:18:59.870320",
+      "user": "68839fd4",
+      "main_value": 269,
+      "secondary_value": 50
+    },
+    {
+      "price": 500.0,
+      "time": "2026-04-19T14:19:24.358570",
+      "user": "6974c958",
+      "main_value": 272,
+      "secondary_value": 50
+    }
+  ],
+  "jet_A265_C50": [
+    {
+      "price": 470.0,
+      "time": "2026-04-19T14:19:41.403924",
+      "user": "689708b8",
+      "main_value": 263,
+      "secondary_value": 50
+    }
+  ],
+  "tank_A170_C32": [
+    {
+      "price": 165.0,
+      "time": "2026-04-19T14:19:56.611069",
+      "user": "681f5fbb",
+      "main_value": 170,
+      "secondary_value": 31
+    },
+    {
+      "price": 179.0,
+      "time": "2026-04-21T09:23:31.778921",
+      "user": "692e0f48",
+      "main_value": 169,
+      "secondary_value": 32
+    }
+  ],
+  "helmet5_V105": [
+    {
+      "price": 135.0,
+      "time": "2026-04-19T14:20:20.562829",
+      "user": "69555230",
+      "main_value": 107,
+      "secondary_value": 0
+    },
+    {
+      "price": 127.0,
+      "time": "2026-04-20T18:50:32.604948",
+      "user": "698a4c04",
+      "main_value": 107,
+      "secondary_value": 0
+    }
+  ],
+  "helmet6_V150": [
+    {
+      "price": 436.0,
+      "time": "2026-04-19T14:20:30.291818",
+      "user": "6910e1eb",
+      "main_value": 149,
+      "secondary_value": 0
+    },
+    {
+      "price": 425.743,
+      "time": "2026-04-19T14:20:44.934270",
+      "user": "682b2414",
+      "main_value": 148,
+      "secondary_value": 0
+    },
+    {
+      "price": 445.544,
+      "time": "2026-04-19T14:20:55.408076",
+      "user": "698b67ad",
+      "main_value": 148,
+      "secondary_value": 0
+    }
+  ],
+  "helmet6_V145": [
+    {
+      "price": 392.157,
+      "time": "2026-04-19T14:20:51.795914",
+      "user": "69ad99ed",
+      "main_value": 145,
+      "secondary_value": 0
+    },
+    {
+      "price": 420.0,
+      "time": "2026-04-19T14:21:09.791244",
+      "user": "68b5afd8",
+      "main_value": 146,
+      "secondary_value": 0
+    },
+    {
+      "price": 390.0,
+      "time": "2026-04-19T17:48:50.618157",
+      "user": "692ee8d8",
+      "main_value": 144,
+      "secondary_value": 0
+    }
+  ],
+  "boots6_V60": [
+    {
+      "price": 499.0,
+      "time": "2026-04-19T14:23:21.843336",
+      "user": "689708b8",
+      "main_value": 59,
+      "secondary_value": 0
+    },
+    {
+      "price": 510.0,
+      "time": "2026-04-19T14:26:08.078514",
+      "user": "68796073",
+      "main_value": 59,
+      "secondary_value": 0
+    },
+    {
+      "price": 509.9,
+      "time": "2026-04-20T18:59:13.205708",
+      "user": "69822f1f",
+      "main_value": 59,
+      "secondary_value": 0
+    }
+  ],
+  "jet_A275_C44": [
+    {
+      "price": 459.0,
+      "time": "2026-04-19T14:39:09.567145",
+      "user": "69776cc8",
+      "main_value": 276,
+      "secondary_value": 45
+    },
+    {
+      "price": 445.0,
+      "time": "2026-04-19T21:27:15.761472",
+      "user": "69776cc8",
+      "main_value": 276,
+      "secondary_value": 45
+    },
+    {
+      "price": 450.0,
+      "time": "2026-04-20T18:01:14.120124",
+      "user": "69772cc8",
+      "main_value": 273,
+      "secondary_value": 45
+    }
+  ],
+  "jet_A285_C50": [
+    {
+      "price": 560.0,
+      "time": "2026-04-19T14:39:19.004956",
+      "user": "69ae362f",
+      "main_value": 287,
+      "secondary_value": 50
+    },
+    {
+      "price": 530.0,
+      "time": "2026-04-20T12:34:56.389703",
+      "user": "69ae362f",
+      "main_value": 287,
+      "secondary_value": 50
+    }
+  ],
+  "jet_A245_C44": [
+    {
+      "price": 396.03,
+      "time": "2026-04-19T14:40:58.934356",
+      "user": "6813b75a",
+      "main_value": 245,
+      "secondary_value": 44
+    }
+  ],
+  "pants5_V35": [
+    {
+      "price": 105.0,
+      "time": "2026-04-19T14:43:16.653031",
+      "user": "697a6095",
+      "main_value": 37,
+      "secondary_value": 0
+    }
+  ],
+  "pants5_V50": [
+    {
+      "price": 125.0,
+      "time": "2026-04-19T14:43:52.935112",
+      "user": "681f5fbb",
+      "main_value": 49,
+      "secondary_value": 0
+    },
+    {
+      "price": 129.6,
+      "time": "2026-04-19T14:44:49.976912",
+      "user": "697a6095",
+      "main_value": 49,
+      "secondary_value": 0
+    },
+    {
+      "price": 128.0,
+      "time": "2026-04-20T18:56:55.115921",
+      "user": "68a8b9aa",
+      "main_value": 49,
+      "secondary_value": 0
+    }
+  ],
+  "tank_A165_C32": [
+    {
+      "price": 175.0,
+      "time": "2026-04-19T14:54:55.637174",
+      "user": "6991d3e4",
+      "main_value": 166,
+      "secondary_value": 32
+    },
+    {
+      "price": 170.0,
+      "time": "2026-04-20T17:39:52.875931",
+      "user": "69972a66",
+      "main_value": 163,
+      "secondary_value": 31
+    },
+    {
+      "price": 173.267,
+      "time": "2026-04-20T18:50:17.482063",
+      "user": "69aebe2a",
+      "main_value": 163,
+      "secondary_value": 32
+    }
+  ],
+  "helmet5_V110": [
+    {
+      "price": 152.38,
+      "time": "2026-04-19T14:55:19.792557",
+      "user": "69a54985",
+      "main_value": 109,
+      "secondary_value": 0
+    }
+  ],
+  "gloves6_V60": [
+    {
+      "price": 369.0,
+      "time": "2026-04-19T15:00:10.151956",
+      "user": "684db976",
+      "main_value": 60,
+      "secondary_value": 0
+    },
+    {
+      "price": 386.139,
+      "time": "2026-04-19T15:01:00.374527",
+      "user": "69b6b6a4",
+      "main_value": 60,
+      "secondary_value": 0
+    },
+    {
+      "price": 390.0,
+      "time": "2026-04-19T15:01:04.592094",
+      "user": "68a0c54a",
+      "main_value": 60,
+      "secondary_value": 0
+    },
+    {
+      "price": 369.0,
+      "time": "2026-04-19T18:00:34.446087",
+      "user": "69a9dda3",
+      "main_value": 59,
+      "secondary_value": 0
+    },
+    {
+      "price": 400.0,
+      "time": "2026-04-20T18:56:26.644116",
+      "user": "6895dc73",
+      "main_value": 60,
+      "secondary_value": 0
+    }
+  ],
+  "chest5_V50": [
+    {
+      "price": 131.98,
+      "time": "2026-04-19T17:49:16.866126",
+      "user": "69a3e618",
+      "main_value": 50,
+      "secondary_value": 0
+    },
+    {
+      "price": 129.0,
+      "time": "2026-04-20T18:53:06.289717",
+      "user": "698a4c04",
+      "main_value": 50,
+      "secondary_value": 0
+    }
+  ],
+  "jet_A295_C48": [
+    {
+      "price": 420.0,
+      "time": "2026-04-19T17:58:49.659145",
+      "user": "69973717",
+      "main_value": 296,
+      "secondary_value": 49
+    }
+  ],
+  "gloves5_V40": [
+    {
+      "price": 158.317,
+      "time": "2026-04-19T18:27:12.054872",
+      "user": "687e0a98",
+      "main_value": 40,
+      "secondary_value": 0
+    },
+    {
+      "price": 152.999,
+      "time": "2026-04-20T18:55:55.965081",
+      "user": "68fb6975",
+      "main_value": 40,
+      "secondary_value": 0
+    }
+  ],
+  "gloves5_V35": [
+    {
+      "price": 137.8,
+      "time": "2026-04-19T18:27:23.361329",
+      "user": "697b1171",
+      "main_value": 36,
+      "secondary_value": 0
+    }
+  ],
+  "boots5_V40": [
+    {
+      "price": 198.0,
+      "time": "2026-04-19T18:55:08.844631",
+      "user": "6962ae05",
+      "main_value": 40,
+      "secondary_value": 0
+    },
+    {
+      "price": 189.0,
+      "time": "2026-04-19T18:55:30.150927",
+      "user": "692e0f48",
+      "main_value": 38,
+      "secondary_value": 0
+    },
+    {
+      "price": 184.0,
+      "time": "2026-04-20T18:57:50.580080",
+      "user": "699d48f7",
+      "main_value": 39,
+      "secondary_value": 0
+    }
+  ],
+  "jet_A265_C48": [
+    {
+      "price": 469.0,
+      "time": "2026-04-19T19:00:51.314429",
+      "user": "69a9dda3",
+      "main_value": 264,
+      "secondary_value": 49
+    },
+    {
+      "price": 468.0,
+      "time": "2026-04-19T20:30:25.552873",
+      "user": "697558ff",
+      "main_value": 264,
+      "secondary_value": 48
+    },
+    {
+      "price": 467.0,
+      "time": "2026-04-20T14:45:33.183592",
+      "user": "69a9dda3",
+      "main_value": 264,
+      "secondary_value": 49
+    },
+    {
+      "price": 470.0,
+      "time": "2026-04-20T18:16:43.723047",
+      "user": "69a9dda3",
+      "main_value": 264,
+      "secondary_value": 49
+    }
+  ],
+  "jet_A255_C40": [
+    {
+      "price": 396.0,
+      "time": "2026-04-19T19:03:13.998032",
+      "user": "696e314a",
+      "main_value": 254,
+      "secondary_value": 41
+    }
+  ],
+  "jet_A220_C42": [
+    {
+      "price": 394.9,
+      "time": "2026-04-19T19:10:29.811831",
+      "user": "69c5ee19",
+      "main_value": 222,
+      "secondary_value": 42
+    }
+  ],
+  "jet_A275_C48": [
+    {
+      "price": 500.0,
+      "time": "2026-04-19T19:17:46.142341",
+      "user": "6971435e",
+      "main_value": 275,
+      "secondary_value": 48
+    },
+    {
+      "price": 505.0,
+      "time": "2026-04-20T13:11:12.893614",
+      "user": "69ae362f",
+      "main_value": 277,
+      "secondary_value": 48
+    },
+    {
+      "price": 534.5,
+      "time": "2026-04-20T17:28:02.598405",
+      "user": "6905f497",
+      "main_value": 277,
+      "secondary_value": 49
+    },
+    {
+      "price": 485.0,
+      "time": "2026-04-20T17:28:49.011178",
+      "user": "684c7b78",
+      "main_value": 274,
+      "secondary_value": 47
+    }
+  ],
+  "jet_A270_C46": [
+    {
+      "price": 396.04,
+      "time": "2026-04-19T19:29:59.683433",
+      "user": "69b264e1",
+      "main_value": 272,
+      "secondary_value": 46
+    },
+    {
+      "price": 450.0,
+      "time": "2026-04-19T19:31:38.929635",
+      "user": "6879d778",
+      "main_value": 272,
+      "secondary_value": 46
+    }
+  ],
+  "jet_A295_C42": [
+    {
+      "price": 455.0,
+      "time": "2026-04-19T19:48:50.173250",
+      "user": "697b6f76",
+      "main_value": 295,
+      "secondary_value": 42
+    }
+  ],
+  "jet_A270_C42": [
+    {
+      "price": 410.0,
+      "time": "2026-04-19T20:21:13.353621",
+      "user": "690529e2",
+      "main_value": 270,
+      "secondary_value": 42
+    }
+  ],
+  "jet_A220_C48": [
+    {
+      "price": 396.0,
+      "time": "2026-04-19T22:12:55.703040",
+      "user": "688f741e",
+      "main_value": 221,
+      "secondary_value": 48
+    },
+    {
+      "price": 391.0,
+      "time": "2026-04-20T15:56:41.233698",
+      "user": "688f741e",
+      "main_value": 221,
+      "secondary_value": 48
+    }
+  ],
+  "jet_A255_C50": [
+    {
+      "price": 420.0,
+      "time": "2026-04-19T23:20:05.070594",
+      "user": "6821d53f",
+      "main_value": 256,
+      "secondary_value": 50
+    }
+  ],
+  "jet_A280_C44": [
+    {
+      "price": 460.0,
+      "time": "2026-04-20T13:12:00.060334",
+      "user": "69ae362f",
+      "main_value": 278,
+      "secondary_value": 45
+    }
+  ],
+  "jet_A280_C46": [
+    {
+      "price": 480.0,
+      "time": "2026-04-20T14:46:13.871391",
+      "user": "69bae21b",
+      "main_value": 278,
+      "secondary_value": 46
+    }
+  ],
+  "jet_A230_C44": [
+    {
+      "price": 396.04,
+      "time": "2026-04-20T16:04:34.822566",
+      "user": "6940c8fa",
+      "main_value": 230,
+      "secondary_value": 43
+    }
+  ],
+  "jet_A255_C48": [
+    {
+      "price": 450.0,
+      "time": "2026-04-20T17:24:57.312096",
+      "user": "6987ee76",
+      "main_value": 255,
+      "secondary_value": 48
+    }
+  ],
+  "jet_A295_C40": [
+    {
+      "price": 450.0,
+      "time": "2026-04-20T17:26:13.056262",
+      "user": "697868f8",
+      "main_value": 293,
+      "secondary_value": 41
+    }
+  ],
+  "jet_A290_C48": [
+    {
+      "price": 530.0,
+      "time": "2026-04-20T17:27:42.205018",
+      "user": "689708b8",
+      "main_value": 290,
+      "secondary_value": 48
+    }
+  ],
+  "jet_A275_C50": [
+    {
+      "price": 555.0,
+      "time": "2026-04-20T17:27:48.428801",
+      "user": "69bc6ddf",
+      "main_value": 277,
+      "secondary_value": 50
+    }
+  ],
+  "jet_A270_C48": [
+    {
+      "price": 470.297,
+      "time": "2026-04-20T17:28:12.399311",
+      "user": "69653451",
+      "main_value": 269,
+      "secondary_value": 48
+    },
+    {
+      "price": 440.4,
+      "time": "2026-04-21T08:47:17.211217",
+      "user": "69b6fd09",
+      "main_value": 271,
+      "secondary_value": 48
+    }
+  ],
+  "jet_A300_C44": [
+    {
+      "price": 495.0,
+      "time": "2026-04-20T17:28:33.891821",
+      "user": "696dcb00",
+      "main_value": 299,
+      "secondary_value": 45
+    }
+  ],
+  "jet_A285_C48": [
+    {
+      "price": 550.0,
+      "time": "2026-04-20T17:28:43.608024",
+      "user": "69ab3c0b",
+      "main_value": 284,
+      "secondary_value": 48
+    }
+  ],
+  "jet_A225_C40": [
+    {
+      "price": 394.5,
+      "time": "2026-04-20T17:29:50.071465",
+      "user": "684c7b78",
+      "main_value": 226,
+      "secondary_value": 41
+    },
+    {
+      "price": 396.04,
+      "time": "2026-04-20T17:30:16.276023",
+      "user": "6908be7e",
+      "main_value": 225,
+      "secondary_value": 41
+    }
+  ],
+  "jet_A220_C44": [
+    {
+      "price": 396.0,
+      "time": "2026-04-20T17:29:58.122520",
+      "user": "699364f1",
+      "main_value": 221,
+      "secondary_value": 44
+    }
+  ],
+  "jet_A230_C42": [
+    {
+      "price": 396.04,
+      "time": "2026-04-20T17:30:00.190539",
+      "user": "682221f6",
+      "main_value": 228,
+      "secondary_value": 42
+    }
+  ],
+  "jet_A230_C46": [
+    {
+      "price": 396.04,
+      "time": "2026-04-20T17:30:19.368631",
+      "user": "69772cc8",
+      "main_value": 230,
+      "secondary_value": 46
+    }
+  ],
+  "jet_A230_C48": [
+    {
+      "price": 396.04,
+      "time": "2026-04-20T17:30:26.524372",
+      "user": "69772cc8",
+      "main_value": 229,
+      "secondary_value": 48
+    },
+    {
+      "price": 400.0,
+      "time": "2026-04-20T17:30:43.532963",
+      "user": "697bfe54",
+      "main_value": 230,
+      "secondary_value": 47
+    }
+  ],
+  "jet_A225_C44": [
+    {
+      "price": 399.0,
+      "time": "2026-04-20T17:30:29.414744",
+      "user": "6945a7b0",
+      "main_value": 226,
+      "secondary_value": 45
+    },
+    {
+      "price": 410.0,
+      "time": "2026-04-20T17:30:45.991017",
+      "user": "687c0238",
+      "main_value": 226,
+      "secondary_value": 45
+    }
+  ],
+  "jet_A240_C48": [
+    {
+      "price": 400.0,
+      "time": "2026-04-20T17:30:31.989151",
+      "user": "6951806e",
+      "main_value": 238,
+      "secondary_value": 48
+    },
+    {
+      "price": 400.0,
+      "time": "2026-04-20T17:30:40.830598",
+      "user": "682c5f32",
+      "main_value": 238,
+      "secondary_value": 48
+    }
+  ],
+  "jet_A225_C48": [
+    {
+      "price": 400.0,
+      "time": "2026-04-20T17:30:34.372203",
+      "user": "6945a7b0",
+      "main_value": 224,
+      "secondary_value": 47
+    }
+  ],
+  "jet_A240_C44": [
+    {
+      "price": 400.0,
+      "time": "2026-04-20T17:30:38.553779",
+      "user": "6945a7b0",
+      "main_value": 238,
+      "secondary_value": 44
+    }
+  ],
+  "jet_A250_C44": [
+    {
+      "price": 417.0,
+      "time": "2026-04-20T17:30:47.847786",
+      "user": "697558ff",
+      "main_value": 249,
+      "secondary_value": 43
+    }
+  ],
+  "jet_A240_C40": [
+    {
+      "price": 400.0,
+      "time": "2026-04-20T17:31:32.861864",
+      "user": "6919e93c",
+      "main_value": 242,
+      "secondary_value": 41
+    }
+  ],
+  "tank_A150_C28": [
+    {
+      "price": 153.232,
+      "time": "2026-04-20T17:37:42.408208",
+      "user": "68fb6975",
+      "main_value": 149,
+      "secondary_value": 28
+    }
+  ],
+  "tank_A145_C28": [
+    {
+      "price": 149.0,
+      "time": "2026-04-20T17:41:55.048668",
+      "user": "69972a66",
+      "main_value": 146,
+      "secondary_value": 27
+    }
+  ],
+  "tank_A165_C30": [
+    {
+      "price": 167.5,
+      "time": "2026-04-20T17:44:59.146131",
+      "user": "69970da4",
+      "main_value": 165,
+      "secondary_value": 30
+    }
+  ],
+  "tank_A140_C28": [
+    {
+      "price": 146.0,
+      "time": "2026-04-20T17:48:08.809728",
+      "user": "6829f52d",
+      "main_value": 141,
+      "secondary_value": 28
+    }
+  ],
+  "jet_A250_C48": [
+    {
+      "price": 444.0,
+      "time": "2026-04-20T18:15:37.100674",
+      "user": "69a9dda3",
+      "main_value": 252,
+      "secondary_value": 48
+    },
+    {
+      "price": 441.0,
+      "time": "2026-04-20T18:17:30.682935",
+      "user": "69a9dda3",
+      "main_value": 252,
+      "secondary_value": 48
+    }
+  ],
+  "jet_A235_C50": [
+    {
+      "price": 436.0,
+      "time": "2026-04-20T18:18:45.094384",
+      "user": "69a9dda3",
+      "main_value": 233,
+      "secondary_value": 50
+    }
+  ],
+  "chest6_V70": [
+    {
+      "price": 380.0,
+      "time": "2026-04-20T18:53:24.478775",
+      "user": "69642711",
+      "main_value": 70,
+      "secondary_value": 0
+    }
+  ],
+  "pants6_V70": [
+    {
+      "price": 336.0,
+      "time": "2026-04-20T18:57:31.177126",
+      "user": "68c78b3c",
+      "main_value": 68,
+      "secondary_value": 0
+    }
+  ]
+}

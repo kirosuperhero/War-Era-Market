@@ -17,7 +17,7 @@ def get_secret(key, default):
     except:
         return default
 
-YOUR_JWT = get_secret("YOUR_JWT", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY5Y2VlY2Y1MTk3Zjg0NWZjOWZlZGU1YyJ9LCJpYXQiOjE3NzUxNjg3NTcsImV4cCI6MTc3Nzc2MDc1N30.nIKi8ohQAYsAVXQL9_rlRUr93TDg-G-DVOCQOrRdOtY")
+YOUR_JWT = get_secret("YOUR_JWT", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY5Y2VlY2Y1MTk3Zjg0NWZjOWZlZGU1YyJ9LCJpYXQiOjE3NzcxOTkxNDYsImV4cCI6MTc3OTc5MTE0Nn0.-Am1tHIuQ3xnHn3eZn-iN_KundKvUgU3aTmfoXXaVIA")
 
 ITEM_TYPE_SKILL = {
     "jet":     ("jet",     "attack",         "criticalChance"),
@@ -35,7 +35,7 @@ ITEM_TYPE_SKILL = {
 }
 
 def fetch_transactions(item_code, limit=100):
-    API_URL = "https://api4.warera.io/trpc/transaction.getPaginatedTransactions?batch=1"
+    API_URL = "https://api5.warera.io/trpc/transaction.getPaginatedTransactions?batch=1"
     headers = {
         "Content-Type": "application/json",
         "Cookie": f"jwt={YOUR_JWT}",

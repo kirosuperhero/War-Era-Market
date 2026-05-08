@@ -91,7 +91,7 @@ def get_secret(key, default):
     except:
         return default
 
-YOUR_JWT           = get_secret("YOUR_JWT", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY5Y2VlY2Y1MTk3Zjg0NWZjOWZlZGU1YyJ9LCJpYXQiOjE3NzUxNjg3NTcsImV4cCI6MTc3Nzc2MDc1N30.nIKi8ohQAYsAVXQL9_rlRUr93TDg-G-DVOCQOrRdOtY")
+YOUR_JWT           = get_secret("YOUR_JWT", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY5Y2VlY2Y1MTk3Zjg0NWZjOWZlZGU1YyJ9LCJpYXQiOjE3NzcxOTkxNDYsImV4cCI6MTc3OTc5MTE0Nn0.-Am1tHIuQ3xnHn3eZn-iN_KundKvUgU3aTmfoXXaVIA")
 TELEGRAM_BOT_TOKEN = get_secret("TELEGRAM_BOT_TOKEN", "8261610629:AAFs-el5LK236x1xkDuUM8k-6NOi81X4FU8")
 TELEGRAM_CHAT_ID   = get_secret("TELEGRAM_CHAT_ID",   "1690550033")
 
@@ -517,7 +517,7 @@ def get_bucket_key_str(main_value, secondary_value, category_config):
 
 # ========== جلب المبيعات لنوع معين ==========
 def fetch_transactions(item_code, limit=100):
-    API_URL = "https://api4.warera.io/trpc/transaction.getPaginatedTransactions?batch=1"
+    API_URL = "https://api5.warera.io/trpc/transaction.getPaginatedTransactions?batch=1"
     headers = {
         "Content-Type": "application/json",
         "Cookie": f"jwt={YOUR_JWT}",
@@ -615,7 +615,7 @@ def maybe_auto_sync():
 # ========== جلب عروض السوق ==========
 @st.cache_data(ttl=60)
 def fetch_single_item(item_code, limit=50, cursor=None):
-    API_URL = "https://api4.warera.io/trpc/itemOffer.getItemOffers,transaction.getPaginatedTransactions?batch=1"
+    API_URL = "https://api5.warera.io/trpc/itemOffer.getItemOffers,transaction.getPaginatedTransactions?batch=1"
     headers = {
         "Content-Type": "application/json",
         "Cookie": f"jwt={YOUR_JWT}",
@@ -751,24 +751,31 @@ secondary_name = get_secondary_name(category_config)
 
 all_items = []
 for item in raw_items:
-    quality         = calculate_quality_score(item['skills'], category_config)
-    main_value      = get_main_value(item['skills'], category_config)
+    quality = calculate_quality_score(item['skills'], category_config)
+    main_value = get_main_value(item['skills'], category_config)
     secondary_value = get_secondary_value(item['skills'], category_config)
-    value_for_money = (quality / item['price']) * 1000 if item['price'] > 0 else 0
+    
+    # ✅ التعديل المطلوب
+    price = item.get('price')
+    if price is None or price <= 0:
+        continue
+    
+    value_for_money = (quality / price) * 1000
+    
     all_items.append({
-        'id':              item['id'],
-        'price':           item['price'],
-        'user':            item['user'],
-        'main_value':      main_value,
+        'id': item['id'],
+        'price': price,
+        'user': item['user'],
+        'main_value': main_value,
         'secondary_value': secondary_value,
-        'main_name':       main_name,
-        'secondary_name':  secondary_name,
-        'quality_score':   quality,
+        'main_name': main_name,
+        'secondary_name': secondary_name,
+        'quality_score': quality,
         'value_for_money': value_for_money,
-        'createdAt':       item['createdAt'],
-        'time_ago':        item['time_ago'],
-        'attack':          item['attack'],
-        'critical':        item['critical']
+        'createdAt': item['createdAt'],
+        'time_ago': item['time_ago'],
+        'attack': item['attack'],
+        'critical': item['critical']
     })
 
 df = pd.DataFrame(all_items)
@@ -1456,6 +1463,7 @@ with tab5:
         "هذه فرص ربح نادرة — البائع يبيع بسعر لم يره السوق من قبل."
     )
 
+    # ========== إعدادات Auto-Scan ==========
     snipe_c1, snipe_c2, snipe_c3 = st.columns([2, 1, 1])
     with snipe_c1:
         snipe_min_discount = st.slider(
@@ -1466,13 +1474,20 @@ with tab5:
     with snipe_c2:
         snipe_min_sales = st.number_input("أقل عدد مبيعات مرجعية", 2, 20, 3)
     with snipe_c3:
-        st.write("")
-        st.write("")
+        auto_snipe = st.checkbox("🔄 تحديث تلقائي كل 30 ثانية", value=False,
+                                 help="يُحدّث القناصة أوتوماتيكياً كل 30 ثانية (ما دام المتصفح مفتوحاً)")
+
+    # ========== تفعيل Auto-refresh ==========
+    if auto_snipe:
+        from streamlit_autorefresh import st_autorefresh
+        st_autorefresh(interval=30000, limit=200, key="snipe_auto_refresh")
+        scan_snipes = True  # في الوضع التلقائي، يعتبر دائماً مضغوط
+        st.info("🔄 وضع التحديث التلقائي مُفعّل - سيتم فحص القناصات كل 30 ثانية")
+    else:
         scan_snipes = st.button("🎯 ابدأ المسح", type="primary", use_container_width=True, key="scan_snipes_btn")
 
-    if not scan_snipes:
-        st.info("اضغط **🎯 ابدأ المسح** لفحص جميع الأصناف الـ 12.")
-    else:
+    # ========== منطق المسح (نفسه لكن من غير تغيير) ==========
+    if scan_snipes:
         snipes = []
         with st.spinner(f"جاري فحص {len(ITEM_CATEGORIES)} صنف..."):
             pbar = st.progress(0)
@@ -1519,7 +1534,7 @@ with tab5:
             snipes.sort(key=lambda x: -x['discount_pct'])
             st.success(f"🎯 وُجدت **{len(snipes)}** قناصة عبر السوق")
 
-            # تنبيهات تيليجرام للقناصات الجديدة
+            # تنبيهات تيليجرام (نفس الكود القديم)
             sent_alerts = load_sent_alerts()
             new_count   = 0
             for s in snipes[:5]:
@@ -1539,7 +1554,7 @@ with tab5:
                 save_sent_alerts(sent_alerts)
                 st.toast(f"📤 أُرسل {new_count} تنبيه قناصة جديد لتيليجرام", icon="🎯")
 
-            # عرض القناصات
+            # عرض القناصات (نفس الكود القديم)
             for rank, s in enumerate(snipes[:20], start=1):
                 tier_emoji = "🔥🔥🔥" if s['discount_pct'] >= 15 else "🔥🔥" if s['discount_pct'] >= 8 else "🔥"
                 with st.container(border=True):
@@ -1571,7 +1586,9 @@ with tab5:
                         st.metric("💎 ربح vs الوسيط", f"+${s['profit_vs_med']:.2f}",
                                   help=f"الربح إذا بعت بسعر وسيط البيع التاريخي")
                     st.caption(f"📚 {s['bucket_count']} صفقة مرجعية في آخر 14 يوم")
-
+    else:
+        # لو scan_snipes == False (يعني الزر معموسش والـ auto-scan مش مفعل)
+        st.info("اضغط **🎯 ابدأ المسح** أو فعّل **التحديث التلقائي** لبدء فحص القناصات.")
 # ------------------------------------------------------------------
 # TAB 6: 🧮 حاسبة البيع — Sell Calculator
 # ------------------------------------------------------------------

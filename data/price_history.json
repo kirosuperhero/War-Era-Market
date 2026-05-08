@@ -95,6 +95,13 @@
       "user": "68796073",
       "main_value": 245,
       "secondary_value": 50
+    },
+    {
+      "price": 440.0,
+      "time": "2026-05-08T20:26:44.167167",
+      "user": "69a822f4",
+      "main_value": 245,
+      "secondary_value": 50
     }
   ],
   "jet_A270_C50": [
@@ -119,6 +126,20 @@
       "time": "2026-04-19T14:19:41.403924",
       "user": "689708b8",
       "main_value": 263,
+      "secondary_value": 50
+    },
+    {
+      "price": 519.99,
+      "time": "2026-04-29T10:24:44.952032",
+      "user": "69635dc2",
+      "main_value": 267,
+      "secondary_value": 50
+    },
+    {
+      "price": 485.0,
+      "time": "2026-05-08T20:27:29.395494",
+      "user": "68617684",
+      "main_value": 267,
       "secondary_value": 50
     }
   ],
@@ -883,6 +904,15 @@
       "user": "68c78b3c",
       "main_value": 68,
       "secondary_value": 0
+    }
+  ],
+  "jet_A260_C50": [
+    {
+      "price": 505.0,
+      "time": "2026-04-29T09:54:36.887149",
+      "user": "69967c08",
+      "main_value": 260,
+      "secondary_value": 50
     }
   ]
 }

@@ -219,6 +219,13 @@
       "user": "692ee8d8",
       "main_value": 144,
       "secondary_value": 0
+    },
+    {
+      "price": 399.01,
+      "time": "2026-05-08T20:48:03.072453",
+      "user": "69db83d7",
+      "main_value": 146,
+      "secondary_value": 0
     }
   ],
   "boots6_V60": [
@@ -352,6 +359,13 @@
       "price": 152.38,
       "time": "2026-04-19T14:55:19.792557",
       "user": "69a54985",
+      "main_value": 109,
+      "secondary_value": 0
+    },
+    {
+      "price": 137.0,
+      "time": "2026-05-08T20:47:27.157007",
+      "user": "6953ec47",
       "main_value": 109,
       "secondary_value": 0
     }
@@ -913,6 +927,15 @@
       "user": "69967c08",
       "main_value": 260,
       "secondary_value": 50
+    }
+  ],
+  "tank_A170_C28": [
+    {
+      "price": 165.0,
+      "time": "2026-05-08T20:47:06.032721",
+      "user": "692aec50",
+      "main_value": 169,
+      "secondary_value": 29
     }
   ]
 }

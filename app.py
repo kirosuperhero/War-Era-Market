@@ -732,7 +732,68 @@ with st.sidebar:
         st.success(f"✅ تمت — {added} سجل جديد")
 
     st.divider()
+    st.header("🗑️ تنظيف البيانات")
+    
+    if st.button("🧹 مسح البيانات القديمة (آخر 14 يوم فقط)", use_container_width=True):
+        with st.spinner("جاري تنظيف البيانات القديمة..."):
+            # تنظيف sales_cache.json
+            cache = load_sales_cache()
+            cleaned_count = 0
+            now = datetime.now().astimezone()
+            
+            for code in cache:
+                if isinstance(cache[code], list):
+                    original_len = len(cache[code])
+                    # خلي فقط السجلات اللي أقل من 14 يوم
+                    new_list = []
+                    for sale in cache[code]:
+                        try:
+                            sale_time = sale.get('time')
+                            if sale_time:
+                                t = datetime.fromisoformat(sale_time.replace('Z', '+00:00'))
+                                # إضافة معلومات المنطقة الزمنية
+                                if t.tzinfo is None:
+                                    t = t.replace(tzinfo=now.tzinfo)
+                                if (now - t).days <= 14:
+                                    new_list.append(sale)
+                        except:
+                            new_list.append(sale)
+                    cache[code] = new_list
+                    cleaned_count += original_len - len(cache[code])
+            
+            save_sales_cache(cache)
+            
+            # تنظيف price_history.json
+            price_hist = load_price_history()
+            price_cleaned = 0
+            for key in price_hist:
+                if isinstance(price_hist[key], list):
+                    original_len = len(price_hist[key])
+                    new_list = []
+                    for record in price_hist[key]:
+                        try:
+                            record_time = record.get('time')
+                            if record_time:
+                                t = datetime.fromisoformat(record_time.replace('Z', '+00:00'))
+                                if t.tzinfo is None:
+                                    t = t.replace(tzinfo=now.tzinfo)
+                                if (now - t).days <= 14:
+                                    new_list.append(record)
+                        except:
+                            new_list.append(record)
+                    price_hist[key] = new_list
+                    price_cleaned += original_len - len(price_hist[key])
+            
+            save_price_history(price_hist)
+            
+            st.success(f"✅ تم مسح {cleaned_count} سجل قديم من المبيعات و {price_cleaned} سجل من تاريخ الأسعار")
+            st.info("📌 البيانات المتبقية: آخر 14 يوم فقط")
+            st.rerun()
+
+    st.divider()
     st.caption(f"📏 **رينج القيم:** {get_range_text(ITEM_CATEGORIES[item_category])}")
+
+    
 
 # ========== جلب بيانات السوق ==========
 category_config = ITEM_CATEGORIES[item_category]
